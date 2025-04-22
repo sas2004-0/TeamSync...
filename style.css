@@ -1,0 +1,97 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f6fdf8;
+    color: #2D483C;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #7C9A7B;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #D6DFD3;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #2D483C;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #4F6656;
+  }
+  
+  .card a {
+    color: #3c7a3d;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 1px solid #B4C9B4;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #2D483C;
+    direction: rtl;
+  }
+  
+  #searchInput::placeholder {
+    color: #88a690;
+    font-style: italic;
+  }
+  .background-image {
+    background-image: url('ksaao.PNG');
+    background-repeat: no-repeat;
+    background-size: 600px auto; /* ← عرض الصورة 600 بكسل، والارتفاع تلقائي */
+    background-position: top center; /* ← مكان الصورة */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
